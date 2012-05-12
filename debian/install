@@ -1,0 +1,3 @@
+usr/bin/xbomb usr/games
+usr/lib/app-defaults/* etc/X11/app-defaults
+debian/xbomb.xpm usr/share/pixmaps

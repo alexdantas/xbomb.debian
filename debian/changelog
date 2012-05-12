@@ -1,0 +1,212 @@
+xbomb (2.2a-1) unstable; urgency=low
+
+  * QA upload: new upstream release
+  * debian/control, debian/compat
+    - Changed maintainer to QA group
+    - Bump Standards-Version to 3.9.3 (no other changes)
+    - Remove homepage from description into a proper field
+    - Bump debhelper compatibility level to 9
+    - Added ${misc:Depends} to binary package
+    - Remove initial article from short description
+    - Remove conflict with non-existing package
+  * debian/small.xpm -> xbomb.xpm
+    - Rename to final name for installing with debhelper 
+  * debian/source/format, debian/patches/*
+    - Switch to source package format '3.0 (quilt)'
+    - Improve manpage patch to fix page section too
+    - Regenerate hiscore patch for new upstream
+  * debian/install, debian/manpages, debian/rules
+    - Switch to debhelper sequencer
+  * debian/copyright
+    - Rewritten into Copyright Format 1.0
+  * debian/watch
+    - Added watch file
+
+ -- Ricardo Mones <mones@debian.org>  Sun, 13 May 2012 01:37:18 +0200
+
+xbomb (2.1a-7.1) unstable; urgency=low
+
+  [Jari Aalto]
+  * Non-maintainer upload.
+  * debian/control
+    - (Build-Depends): update obsolete x-dev to x11proto-core-dev.
+      (important RC bug; Closes: #515479).
+  
+  [tony mancill]
+  * debian/control
+    - Apply patch for description. (Closes: #490174)
+  * debian/copyright
+    - Refer to GPL-2 (addresses lintian error)
+
+ -- tony mancill <tmancill@debian.org>  Mon, 19 Apr 2010 08:13:54 -0700
+
+xbomb (2.1a-7) unstable; urgency=low
+
+  * Updated standards version (no actual changes required).
+  * Fixed an oversight on my part which resulted in the high-score files
+    being left behind even after a purge (closes: #455057).
+  * As a consequence of the previous fix, the package no longer owns
+    /var/games/xbomb, which is now manually created in the postinst.
+  * Removed the "-s" from the install command in debian/rules, so that the
+    package can be built with the nostrip option (closes: #438288).
+    The normal package will still have the binary stripped by dh_strip.
+  * Pass "-g" to compiler so we have something worth stripping in the
+    first place. :)
+  * Updated min debhelper version to 4.
+  * Don't ignore Makefile errors during clean.
+  * Patch to man page to make it more whatis friendly.
+  * Change postinst to use "chown root:games" instead of "root.games".
+  * Updated FSF address in debian/copyright
+  * Added proper quoting to debian/menu.
+  * Made some minor adjustments to the package description in
+    debian/control.
+  * Added <string.h> to hi-score.c to pick up some required prototypes.
+  
+ -- Chris Waters <xtifr@debian.org>  Sun, 09 Dec 2007 15:06:18 -0800
+
+xbomb (2.1a-6.1) unstable; urgency=low
+
+  * Non-maintainer upload to do xlibs-dev transition
+  * debian/control: Replaced xlibs-dev build-dep (Closes: #346792)
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Thu, 19 Jan 2006 18:26:32 +0100
+
+xbomb (2.1a-6) unstable; urgency=low
+
+  * Updated standards version, rebuilt w/o /usr/doc link.
+  * Replaced my ugly icon with a nicer one stolen from fvwm.
+  * Added upstream URL to package description.
+
+ -- Chris Waters <xtifr@debian.org>  Mon,  4 Nov 2002 02:58:22 -0800
+
+xbomb (2.1a-5) unstable; urgency=low
+
+  * Updated standards-version (no actual changes required, tho).
+  * Did some general modernizing of the packaging anyway.
+  * Moved icon to /usr/share/pixmaps.
+
+ -- Chris Waters <xtifr@debian.org>  Fri, 15 Mar 2002 13:46:50 -0800
+
+xbomb (2.1a-4) unstable; urgency=low
+
+  * Took dh_suidregister back out, since apparently there isn't going to
+    be a smooth upgrade path for packages using it. (closes:#84836)
+    Also made package conflict with older suidmanager, as required.
+  * Made app-defaults file into a conffile, despite the fact that lintian
+    (currently) complains, because policy is just about to change here.
+
+ -- Chris Waters <xtifr@debian.org>  Mon,  5 Feb 2001 12:28:48 -0800
+
+xbomb (2.1a-3) unstable; urgency=low
+
+  * Updated standards-version (again).
+  * Added Build-depends.
+  * Updated the description a little.
+  * Finally started using dh_suidregister.  Some minor related changes.
+  * Built against XF86-4 system.  Moved app-defaults file to
+    /etc/X11/app-defaults, which seems to be the correct new location,
+    although it is in advance of policy.
+  * Did a little cleanup on postinst and postrm, added "set -e" to all.
+  * /var/games/xbomb now 755 root.root instead of 775 root.games.  Only
+    the (existing) contents of this directory need to be writable.
+  * High-score files now purged in prerm, not postrm, so that the
+    directory can be properly removed too.
+  * Added a README.Debian to talk about the high-score files.
+
+ -- Chris Waters <xtifr@debian.org>  Wed,  3 Jan 2001 00:01:13 -0800
+
+xbomb (2.1a-2) unstable; urgency=low
+
+  * New standards version 3.0.0.0
+  * changed ref to GPL in copyright file (new standard)
+  * moved man page to usr/share (new standard, FHS)
+  * moved high score files to /var/games (new standard, FHS)
+  * added icon for debian menus
+
+ -- Chris Waters <xtifr@debian.org>  Sun, 21 Nov 1999 03:05:22 -0800
+
+xbomb (2.1a-1) unstable; urgency=low
+
+  * app-defaults/xbomb.ad renamed to XBomb, closes: #35831
+  * new upstream version, has fix for resize problem, closes: #34840
+
+ -- Chris Waters <xtifr@debian.org>  Mon, 12 Apr 1999 03:55:39 -0700
+
+xbomb (2.1-2) unstable; urgency=low
+
+  * hi score files removed from package, now created by postinst.
+  * suidregister support added
+  * debian menu support added
+  * debian/rules: rewritten completely with debhelper
+  * new maintainer
+
+ -- Chris Waters <xtifr@debian.org>  Sun, 14 Feb 1999 13:53:11 -0800
+
+xbomb (2.1-1) unstable; urgency=low
+
+  * Orphaned the package.
+  * New upstream version. [#17991]
+  * Pristine upstream source.
+  * debian/control (Standards-Version): updated to 2.5.0.0.
+  * debian/copyright: update the address of the FSF.
+  * debian/rules (binary-arch): chmod u+w,g=rX rather than g-ws to fix
+    permissions on files.
+  * debian/rules (binary-arch): install high score files as foo.default
+    rather than foo.
+  * debian/postinst: If the high score directory does not exist; create it
+    and copy default score files over.
+  * debian/postrm: new file; remove /var/lib/games/xbomb on purge.
+  * debian/conffiles: removed.
+  * debian/rules (binary-arch): don't use {,}; use install with an
+    explicit mode rather than cp, compress all files in /usr/doc/xbomb/
+    except the copyright, pass -isp to dpkg-gencontrol and other minor
+    clean ups.
+  * debian/control: reformatted long description.
+  * debian/rules (binary-arch): don't make scorefiles and their directory
+    world-unreadable.
+  * debian/rules (clean): also remove debian/substvars.
+
+ -- James Troup <james@nocrew.org>  Tue, 24 Nov 1998 03:30:03 +0000
+
+xbomb (2.0-4.2) unstable; urgency=low
+
+  * Non-maintainer release.
+  * Change architecture from i386 to any.
+
+ -- Martin Mitchell <martin@debian.org>  Wed, 12 Nov 1997 15:20:20 +1100
+
+xbomb (2.0-4.1) unstable; urgency=low
+
+  * Non-maintainer release.
+  * Libc6 compile.
+
+ -- Martin Mitchell <martin@debian.org>  Wed, 12 Nov 1997 04:08:32 +1100
+
+xbomb (2.0-4) unstable; urgency=low
+
+  * Remove reference of debian/tmp in postinst script (Bug#6579)
+
+ -- Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>  Tue, 14 Jan 1997 09:57:22 +0800
+
+xbomb (2.0-3) unstable; urgency=low
+
+  * Write permission for user is not given after saving a hiscore (hiscore.c)
+  * Score files are now conffiles (Bug#6500)
+  * Added postinst script to fix the ownership & permission of 
+  *     /var/lib/games/xbomb if upgraded from 2.0-1 (Bug#6500)
+
+ -- Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>  Fri, 10 Jan 1997 09:41:21 +0800
+
+xbomb (2.0-2) unstable; urgency=low
+
+  * Fixed Bug#6480: hi score files writability.
+
+ -- Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>  Thu, 9 Jan 1997 11:25:50 +0800
+
+xbomb (2.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>  Mon, 9 Dec 1996 17:11:30 +0800
+
+

@@ -1,0 +1,16 @@
+Subject: Make manpage more whatis friendly and fix page section
+Author: Chris Waters <xtifr@debian.org>, Ricardo Mones <mones@debian.org>
+--- xbomb-2.1a.orig/xbomb.6	1995-07-18 22:58:24.000000000 +0200
++++ xbomb-2.1a/xbomb.6	2012-05-13 00:06:47.000000000 +0200
+@@ -6,9 +6,9 @@
+ .\" XBOMB manual page
+ .\" By Andrew M. Bishop November 94 + January 95 + January 2008
+ .\"
+-.TH XBomb 1 "January 5, 2008"
++.TH XBomb 6 "January 5, 2008"
+ .SH NAME
+-xbomb Version 2 \- a version of the popular minesweeper program with some novel features.
++xbomb \- a version of the popular minesweeper program with some novel features.
+ .SH SYNOPSIS
+ .B xbomb
+ .BR [\-hexagon | \-square | \-triangle]

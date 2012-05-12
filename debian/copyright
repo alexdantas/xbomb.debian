@@ -1,0 +1,31 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: XBomb
+Upstream-Contact: Andrew M. Bishop <amb@gedanken.demon.co.uk>
+Source: http://www.gedanken.demon.co.uk/download-xbomb/xbomb-2.2a.tgz
+
+Files: *
+Copyright: 1994-2009 Andrew M. Bishop 
+License: GPL-2+
+
+Files: debian/*
+Copyright:
+ 1996-1997 Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>
+ 1997 Martin Mitchell <martin@debian.org>
+ 1998 James Troup <james@nocrew.org>
+ 1999-2005 Chris Waters <xtifr@debian.org>
+ 2006 Marc 'HE' Brockschmidt <he@debian.org>
+ 2007-2009 Chris Waters <xtifr@debian.org>
+ 2010-2011 Tony Mancill <tmancill@debian.org>, Jari Aalto <jari.aalto@cante.net>
+ 2012 Ricardo Mones <mones@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ Written by Andrew M. Bishop
+ .
+ This file Copyright 1994-2009 Andrew M. Bishop
+ It may be distributed under the GNU Public License, version 2, or
+ any higher version.  See section COPYING of the GNU Public license
+ for conditions under which this file may be redistributed.
+ .
+ On Debian GNU/Linux systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-2'.

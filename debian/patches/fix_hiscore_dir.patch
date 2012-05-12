@@ -1,0 +1,26 @@
+Subject: Don't change file mode and make hiscore file FHS compliant
+Author: Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>, Chris Waters <xtifr@debian.org>
+--- xbomb-2.2a.orig/hiscore.c	2008-01-05 20:23:07.000000000 +0100
++++ xbomb-2.2a/hiscore.c	2012-05-13 01:34:01.000000000 +0200
+@@ -50,7 +50,7 @@
+            nbombs[NLEVELS];     /*+ number of bombs. +*/
+ 
+ /*+ The names of the high score tables. +*/
+-static char *filenames[NTYPES]={"/var/tmp/xbomb6.hi","/var/tmp/xbomb4.hi","/var/tmp/xbomb3.hi"};
++static char *filenames[NTYPES]={"/var/games/xbomb/xbomb6.hi","/var/games/xbomb/xbomb4.hi","/var/games/xbomb/xbomb3.hi"};
+ 
+ /*+ The names of the positions in the high score tables. +*/
+ static char pos[11][5]={"Top","2nd","3rd","4th","5th","6th","7th","8th","9th","10th","Lost"};
+@@ -280,7 +280,10 @@
+ 
+  fclose(f);
+ 
+- chmod(filenames[grid_type-GAME_TYPE],S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH);
++/* Do not change modes of the hiscore files!
++   -Billy Fri Jan 10 11:56:39 HKT 1997 */
++
++/* chmod(filenames[grid_type-GAME_TYPE],S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH); */
+ }
+ 
+ 
+Only in xbomb-2.2a: hiscore.c.orig
