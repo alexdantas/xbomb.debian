@@ -1,0 +1,243 @@
+2009-11-29  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+        Version 2.2a Released
+
+2009-11-29  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xbomb.ad:
+	Add the app-defaults for the different numbers (missed in version 2.2 release).
+
+	* xbomb.c, xwindow.c:
+	Change the colour of the number 8 from white (invisible) to light green.
+	Change the version number to 2.2a.
+
+2008-01-22  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+        Version 2.2 Released
+
+2008-01-05  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xbomb.6:
+	Change the description of the mouse buttons, add description of the X resources
+	for coloured numbers and update for version 2.2.
+
+	* README:
+	Change the description of the mouse buttons and update for version 2.2.
+
+	* xbomb.c, xbomb.h, xwindow.c:
+	Allow the left mouse button to be used to clear safe areas (like the middle
+	button normally does) but only when the square has already been uncovered.
+
+	* hiscore.c:
+	Change how the player's username is determined to make it more portable.
+
+2005-10-15  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* icon.h: Remove gcc-4.0 signed/unsigned pointer warnings.
+
+	* hiscore.c: Include string.h.
+
+2002-11-25  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xwindow.c: Allow a different colour for each number.
+
+Sat Apr 10 18:30:00 1999  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+        Version 2.1a Released
+
+Sat Apr 10 18:28:49 1999  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xbomb.c: Changed the version number to 2.1a.
+
+	* xwindow.c: Improved the resizing options for the triangles game.
+	Renamed the Start button to Restart.
+
+Mon Feb 23 18:49:26 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xwindow.c:
+	Changed the scaling so that smaller grids are allowed to fit a 800x640 screen.
+
+Sat Jan 24 10:40:00 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+        Version 2.1 Released
+
+Wed Jan 21 20:20:23 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xwindow.c: Make the hiscore window highlight even when not popped up.
+
+Wed Jan 21 19:38:18 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* README: Updated for version 2.1.
+
+Wed Jan 21 19:36:21 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xwindow.c: Stop the size changing so much.
+
+Fri Jan 16 19:50:56 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xbomb.ad: Add in the defaults for the hi-score table.
+
+	* hiscore.c, xbomb.c, xbomb.h, xwindow.c:
+	Use global variables to simplify things.
+
+Thu Jan 15 19:55:31 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xbomb.c, xbomb.h, xwindow.c, hiscore.c: Added a high score window in.
+
+Sun Jan 11 11:21:44 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* hiscore.c: Change the meaning of the level variable.
+
+	* xbomb.c:
+	Change the meaning of the level variable and start a game when type or level is changed.
+
+	* xwindow.c:
+	Handle window resizing better and ensure that tiles line up.
+
+Sat Jan 10 19:17:32 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xbomb.ad: Added comments.
+
+Thu Jan  8 20:16:12 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xwindow.c, hiscore.c, xbomb.c, xbomb.h:
+	Tidied the source code and added some comments about the variables used.
+
+Wed Jan  7 21:25:11 1998  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
+
+	* xwindow.c:
+	Enable the close button on the window manager menu as if the quit button was pressed.
+
+Tue Jan 30 21:54:39 1996  Andrew M. Bishop  (amb@gedanken)
+
+	* README: Ready to be uploaded to sunsite.
+
+Sat Jan 20 21:02:46 1996  Andrew M. Bishop  (amb@gedanken)
+
+	* Makefile: Added a default CC and CFLAGS.
+
+Thu Nov 16 20:16:39 1995  Andrew Bishop  (amb@dan)
+
+	* xbomb.c: Used rand() instead of random() to work on Solaris 2.3
+
+	* hiscore.c: Made work on Solaris 2.3
+
+Wed Nov 15 19:26:42 1995  Andrew Bishop  (amb@dan)
+
+	* xwindow.c: Made work on Solaris 2.3
+
+Tue Jul 18 20:58:37 1995  Andrew Bishop  (amb@dan)
+
+	* xbomb.6: Fixed minor man page bug.
+
+Tue Jul 11 19:17:38 1995  Andrew Bishop  (amb@dan)
+
+	* Makefile: Changed X386 to X11R6.
+
+Wed May 10 19:00:00 1995  Andrew Bishop  (amb@dan)
+
+        Version 2.0 Released
+
+Wed May 10 18:55:55 1995  Andrew Bishop  (amb@dan)
+
+	* xwindow.c: Put a title on the title bar with a copyright message.
+
+Mon Mar 20 18:51:19 1995  Andrew Bishop  (amb@dan)
+
+	* xwindow.c:
+	Changed the ratio of width:height from 15:13 to 8:7, to allow finer resizing resolution on hex and tri.
+
+Sat Feb  4 16:48:59 1995  Andrew Bishop  (amb@dan)
+
+	* xwindow.c: Fixed the Control-Z clock goes funny bug.
+
+Thu Feb  2 19:01:51 1995  Andrew Bishop  (amb@dan)
+
+	* xbomb.c, xbomb.h, hiscore.c, xwindow.c:
+	Fixed warning messages that appear when compiling on sun.
+
+Sat Jan 21 14:33:42 1995  Andrew Bishop  (amb@dan)
+
+	* xwindow.c: Added the missing label for 12 neighbours.
+
+Mon Jan 16 22:03:34 1995  Andrew Bishop  (amb@dan)
+
+	* Makefile: Added icon.h to the dependency list.
+
+	* icon.h: Initial revision - The pixmap for the icon.
+	* xwindow.c: Added an icon.
+
+	* Makefile: Removed -g from the makefile
+
+Mon Jan 16 19:18:49 1995  Andrew Bishop  (amb@dan)
+
+	* hiscore.c, xwindow.c, xbomb.h, xbomb.c, xbomb.6:
+	First selection is always safe and minor text input/output improvements.
+
+Sun Jan 15 17:43:44 1995  Andrew Bishop  (amb@dan)
+
+	* xwindow.c, xbomb.h, xbomb.c, xbomb.6, hiscore.c, README, Makefile:
+	Version 2 - Triangular and Hexagonal grids added
+	[This also includes many changes and improvements to the code along the way.]
+
+Wed Jan 11 21:00:00 1995  Andrew Bishop  (amb@dan)
+
+        Version 1.0 Released
+
+Wed Jan 11 20:53:59 1995  Andrew Bishop  (amb@dan)
+
+	* xbomb.ad: Change the UNSEEN colour to make it darker.
+
+	* xwindow.c: Added a 'flag' pixmap for THINK_BOMB, use stipple for UNSEEN.
+
+Sun Dec  4 17:20:27 1994  Andrew Bishop  (amb@dan)
+
+	* Makefile: Added the app-defaults file to the installation.
+
+	* xbomb.ad: A sample app-defaults file.
+
+Sun Dec  4 17:14:05 1994  Andrew Bishop  (amb@dan)
+
+	* xbomb.6: Improved the X-resources section.
+
+Sun Dec  4 16:40:51 1994  Andrew Bishop  (amb@dan)
+
+	* Makefile: Added a LIB.
+	* Makefile: Added a strip when installing and removed the all target.
+
+Fri Dec  2 20:46:26 1994  Andrew Bishop  (amb@dan)
+
+	* Makefile: Install it in man6 not man1
+	* Makefile: Updated installation location.
+
+Tue Nov 29 21:08:02 1994  Andrew Bishop  (amb@dan)
+
+	* xbomb.c: Better updating of the screen.
+
+	* xwindow.c: Changed print format for window when finished.
+
+	* hiscore.c: Print with different formats for the different levels.
+
+	* xbomb.c: Don't print time to win in here.
+
+	* xwindow.c: Return the value in milliseconds not rounded.
+
+Fri Nov 25 19:48:30 1994  Andrew Bishop  (amb@dan)
+
+	* xwindow.c: Hi scores now in milli seconds.
+
+	* hiscore.c: Hiscore table now stores scores to milli seconds.
+
+	* xbomb.c: Can now print the hi scores and exit.
+
+	* xbomb.6: Mention the print hiscore and exit option.
+
+Tue Nov 15 19:26:14 1994  Andrew Bishop  (amb@dan)
+
+	* Makefile: Added a clean option
+	* Makefile: Added an install option.
+
+Tue Nov  8 20:09:03 1994  Andrew Bishop  (amb@dan)
+
+	* Makefile, README, hiscore.c, xbomb.6, xbomb.c, xbomb.h, xwindow.c:
+	Initial revision

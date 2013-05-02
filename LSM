@@ -1,0 +1,19 @@
+Begin3
+Title:          XBomb - X Windows strategy game.
+Version:        2.2a [29-Nov-09]
+Entered-date:   29NOV09
+Description:    A 'minesweeper' style strategy game for UNIX and
+                X-Windows. A test of speed and logic to find the
+                location of bombs hidden in a grid. A choice of
+                hexagonal, square or triangular grids, each in 3
+                difficulty levels, all games played against the
+                clock, with a high-score table for each.
+Keywords:       X-Windows game strategy mine bomb
+Author:         amb@gedanken.demon.co.uk
+Maintained-by:  amb@gedanken.demon.co.uk
+Primary-site:   www.gedanken.demon.co.uk /download-xbomb
+                24k xbomb-2.2a.tgz
+Original-site:  
+Platforms:      UNIX X-Windows
+Copying-policy: GPL
+End
