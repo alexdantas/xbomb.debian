@@ -1,7 +1,12 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --parallel
 
 override_dh_auto_install:
 	$(MAKE) install INSTDIR=$(CURDIR)/debian/tmp/usr
+
+override_dh_fixperms:
+	chown 'root:games' debian/xbomb/usr/games/xbomb
+	chmod 2755 debian/xbomb/usr/games/xbomb
+	dh_fixperms -Xdebian/xbomb/usr/games/xbomb

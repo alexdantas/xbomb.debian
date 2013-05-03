@@ -1,0 +1,13 @@
+Description: Removed unnecessary linkage with libXmu (-lXmu) because executable wasn't using any of the symbols.
+Author: Alexandre Dantas <alex.dantas92@gmail.com>
+Last-Update: 2013-04-26--- a/Makefile
++++ b/Makefile
+@@ -21,7 +21,7 @@
+ 
+ LIB=
+ 
+-XLIB=-L/usr/X11R6/lib -lXaw -lXmu -lXt -lX11
++XLIB=-L/usr/X11R6/lib -lXaw -lXt -lX11
+ 
+ COMPILE=$(CC) -c $(CFLAGS)
+ 

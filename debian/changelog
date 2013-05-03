@@ -1,3 +1,17 @@
+xbomb (2.2a-2) unstable; urgency=low
+
+  * New mantainer (Closes: #664100)
+  * Bump Standards-Version to 3.9.4 (no other changes)
+  * debian/patches/*
+    - Added hardening flags to compilation
+    - Removed useless linkage against libXmu
+  * debian/rules
+    - Added override steps on fixperms
+  * debian/control
+    - Using Git as VCS
+
+ -- Alexandre Dantas <alex.dantas92@gmail.com>  Thu, 02 May 2013 20:59:35 -0300
+
 xbomb (2.2a-1) unstable; urgency=low
 
   * QA upload: new upstream release
@@ -10,7 +24,7 @@ xbomb (2.2a-1) unstable; urgency=low
     - Remove initial article from short description
     - Remove conflict with non-existing package
   * debian/small.xpm -> xbomb.xpm
-    - Rename to final name for installing with debhelper 
+    - Rename to final name for installing with debhelper
   * debian/source/format, debian/patches/*
     - Switch to source package format '3.0 (quilt)'
     - Improve manpage patch to fix page section too
@@ -31,7 +45,7 @@ xbomb (2.1a-7.1) unstable; urgency=low
   * debian/control
     - (Build-Depends): update obsolete x-dev to x11proto-core-dev.
       (important RC bug; Closes: #515479).
-  
+
   [tony mancill]
   * debian/control
     - Apply patch for description. (Closes: #490174)
@@ -61,7 +75,7 @@ xbomb (2.1a-7) unstable; urgency=low
   * Made some minor adjustments to the package description in
     debian/control.
   * Added <string.h> to hi-score.c to pick up some required prototypes.
-  
+
  -- Chris Waters <xtifr@debian.org>  Sun, 09 Dec 2007 15:06:18 -0800
 
 xbomb (2.1a-6.1) unstable; urgency=low
@@ -192,7 +206,7 @@ xbomb (2.0-3) unstable; urgency=low
 
   * Write permission for user is not given after saving a hiscore (hiscore.c)
   * Score files are now conffiles (Bug#6500)
-  * Added postinst script to fix the ownership & permission of 
+  * Added postinst script to fix the ownership & permission of
   *     /var/lib/games/xbomb if upgraded from 2.0-1 (Bug#6500)
 
  -- Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>  Fri, 10 Jan 1997 09:41:21 +0800

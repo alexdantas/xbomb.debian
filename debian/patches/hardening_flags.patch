@@ -1,0 +1,31 @@
+Description: Applied hardening flags to build process.
+Author: Alexandre Dantas <alex.dantas92@gmail.com>
+Last-Update: 2013-05-02--- a/Makefile
++++ b/Makefile
+@@ -13,7 +13,10 @@
+ #
+ 
+ CC=gcc
+-CFLAGS=-O2
++CFLAGS   = -O2 $(CDEBUG) -Wall -Wextra $(shell dpkg-buildflags --get CFLAGS)
++CPPFLAGS = $(shell dpkg-buildflags --get CPPFLAGS)
++LDFLAGS  = $(shell dpkg-buildflags --get LDFLAGS)
++
+ 
+ INCLUDES=
+ 
+@@ -32,12 +35,12 @@
+ ########
+ 
+ xbomb : $(OBJ)
+-	$(LINK) $(OBJ) -o $@ $(LIB) $(XLIB)
++	$(LINK) $(OBJ) -o $@ $(LIB) $(XLIB) $(LDFLAGS)
+ 
+ ########
+ 
+ %.o : %.c
+-	$(COMPILE) $< -o $@ $(INCLUDES)
++	$(COMPILE) $(CPPFLAGS) $(CFLAGS) $< -o $@ $(INCLUDES)
+ 
+ xbomb.o   : xbomb.c   xbomb.h
+ xwindow.o : xwindow.c xbomb.h icon.h

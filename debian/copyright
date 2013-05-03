@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: XBomb
 Upstream-Contact: Andrew M. Bishop <amb@gedanken.demon.co.uk>
-Source: http://www.gedanken.demon.co.uk/download-xbomb/xbomb-2.2a.tgz
+Source: http://www.gedanken.org.uk/software/xbomb/
 
 Files: *
 Copyright: 1994-2009 Andrew M. Bishop 
@@ -17,6 +17,7 @@ Copyright:
  2007-2009 Chris Waters <xtifr@debian.org>
  2010-2011 Tony Mancill <tmancill@debian.org>, Jari Aalto <jari.aalto@cante.net>
  2012 Ricardo Mones <mones@debian.org>
+ 2013 Alexandre Dantas <alex.dantas92@gmail.com>
 License: GPL-2+
 
 License: GPL-2+

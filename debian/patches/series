@@ -1,2 +1,4 @@
 fix_hiscore_dir.patch
 fix_manpage.patch
+hardening_flags.patch
+removed_useless_linkage.patch
