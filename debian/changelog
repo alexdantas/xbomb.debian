@@ -1,7 +1,7 @@
 xbomb (2.2a-3) unstable; urgency=low
 
   * Fixed end-of-line errors on patch files.
-  * Added desktop file and PNG icons (closes #738057).
+  * Added desktop file and PNG icons (closes: #738057).
   * Updated maintainer mail address.
 
  -- Alexandre Dantas <eu@alexdantas.net>  Mon, 04 Aug 2014 02:05:28 -0400
