@@ -27,3 +27,8 @@ for i in xbomb6.hi xbomb4.hi xbomb3.hi; do
     # Set permissions (fixes permissions of pre 2.0-3 files)
     chmod 664 $i
 done
+
+# Updating menus after adding the current entry
+if [ "$1" = "configure" ] && [ -x "`which update-menus 2>/dev/null`" ]; then
+	update-menus
+fi
