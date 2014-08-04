@@ -1,7 +1,7 @@
 Source: xbomb
 Section: games
 Priority: optional
-Maintainer: Alexandre Dantas <alex.dantas92@gmail.com>
+Maintainer: Alexandre Dantas <eu@alexdantas.net>
 Standards-Version: 3.9.4
 Build-depends: debhelper (>= 9), libx11-dev, libxt-dev, x11proto-core-dev,
                libxaw7-dev
