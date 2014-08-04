@@ -1,3 +1,5 @@
 usr/bin/xbomb usr/games
 usr/lib/app-defaults/* etc/X11/app-defaults
 debian/xbomb.xpm usr/share/pixmaps
+debian/hicolor-icons/* usr/share/icons/hicolor/
+debian/xbomb.desktop usr/share/applications
