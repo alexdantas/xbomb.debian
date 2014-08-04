@@ -1,6 +1,7 @@
 Description: Applied hardening flags to build process.
 Author: Alexandre Dantas <alex.dantas92@gmail.com>
-Last-Update: 2013-05-02--- a/Makefile
+Last-Update: 2013-05-02
+--- a/Makefile
 +++ b/Makefile
 @@ -13,7 +13,10 @@
  #

@@ -1,6 +1,7 @@
 Description: Removed unnecessary linkage with libXmu (-lXmu) - executable wasn't using any of the symbols.
 Author: Alexandre Dantas <alex.dantas92@gmail.com>
-Last-Update: 2013-05-02--- a/Makefile
+Last-Update: 2013-05-02
+--- a/Makefile
 +++ b/Makefile
 @@ -22,7 +22,7 @@
  
