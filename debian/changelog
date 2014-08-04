@@ -1,3 +1,11 @@
+xbomb (2.2a-3) unstable; urgency=low
+
+  * Fixed end-of-line errors on patch files.
+  * Added desktop file and PNG icons.
+  * Updated maintainer mail address.
+
+ -- Alexandre Dantas <eu@alexdantas.net>  Mon, 04 Aug 2014 02:05:28 -0400
+
 xbomb (2.2a-2) unstable; urgency=low
 
   * New mantainer (Closes: #664100)
