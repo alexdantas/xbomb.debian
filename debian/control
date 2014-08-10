@@ -6,8 +6,8 @@ Standards-Version: 3.9.5
 Build-depends: debhelper (>= 9), libx11-dev, libxt-dev, x11proto-core-dev,
                libxaw7-dev
 Homepage: http://www.gedanken.org.uk/software/xbomb/
-Vcs-Git: git://github.com/alexdantas/xbomb.git
-Vcs-Browser: https://github.com/alexdantas/xbomb
+Vcs-Git: git://github.com/alexdantas/xbomb.debian.git -b master
+Vcs-Browser: https://github.com/alexdantas/xbomb.debian
 
 Package: xbomb
 Architecture: any
