@@ -4,6 +4,11 @@ xbomb (2.2a-3) unstable; urgency=low
   * Fixed end-of-line errors on patch files
   * Added desktop file and PNG icons (closes: #738057)
   * Updated maintainer mail address
+  * Cryptographic signature verification: upstream provides
+    a PGP signature to verify the tarball. Consequently:
+    - Added debian/upstream/signing-key.asc
+    - Modified debian/source/include-binaries
+    - Updated debian/watch
 
  -- Alexandre Dantas <eu@alexdantas.net>  Mon, 04 Aug 2014 02:05:28 -0400
 
