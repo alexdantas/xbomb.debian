@@ -1,6 +1,6 @@
 xbomb (2.2a-3) unstable; urgency=low
 
-  * Bump standards version to 3.9.5 (no changes)
+  * Bump standards version to 3.9.5 (no changes) 
   * Fixed end-of-line errors on patch files
   * Added desktop file and PNG icons (closes: #738057)
   * Updated maintainer mail address
@@ -236,5 +236,3 @@ xbomb (2.0-1) unstable; urgency=low
   * Initial release.
 
  -- Billy C.-M. Chow <cmchow@se.cuhk.edu.hk>  Mon, 9 Dec 1996 17:11:30 +0800
-
-

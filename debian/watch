@@ -1,4 +1,3 @@
-version=3
+version=3 
 opts="pgpsigurlmangle=s/$/.asc/" \
 http://www.gedanken.org.uk/software/xbomb/download/xbomb-(.*)\.(.*)\.tgz
-
