@@ -1,13 +1,11 @@
 /***************************************
-  $Header: /home/amb/xbomb/RCS/xbomb.c 1.16 2009/11/29 08:54:53 amb Exp $
-
-  XBomb - 'Minesweeper' game - Version 2.2a.
+  XBomb - 'Minesweeper' game - Version 2.2b.
 
   Main function of program - excludes all window interface parts.
   ******************/ /******************
   Written by Andrew M. Bishop
 
-  This file Copyright 1994-2009 Andrew M. Bishop
+  This file Copyright 1994-2014 Andrew M. Bishop
   It may be distributed under the GNU Public License, version 2, or
   any higher version.  See section COPYING of the GNU Public license
   for conditions under which this file may be redistributed.
@@ -75,9 +73,9 @@ int main(int argc,char** argv)
  long t;
 
  printf("\n"
-        "XBomb Version 2.2a\n"
+        "XBomb Version 2.2b\n"
         "\n"
-        "(c) Andrew M. Bishop 1994-2009. [amb@gedanken.demon.co.uk]\n"
+        "(c) Andrew M. Bishop 1994-2013 [http://www.gedanken.org.uk/software/xbomb/]\n"
         "\n");
 
  if(argc>1)

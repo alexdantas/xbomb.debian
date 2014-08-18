@@ -1,13 +1,11 @@
 /***************************************
-  $Header: /home/amb/xbomb/RCS/xwindow.c 1.26 2009/11/29 08:54:53 amb Exp $
-
-  XBomb - 'Minesweeper' game - Version 2.2a.
+  XBomb - 'Minesweeper' game - Version 2.2b.
 
   All X Window functions.
   ******************/ /******************
   Written by Andrew M. Bishop
 
-  This file Copyright 1994-2009 Andrew M. Bishop
+  This file Copyright 1994-2014 Andrew M. Bishop
   It may be distributed under the GNU Public License, version 2, or
   any higher version.  See section COPYING of the GNU Public license
   for conditions under which this file may be redistributed.
@@ -147,7 +145,7 @@ void InitialiseX(int *argc,char **argv)
 
  toplevel=XtVaAppInitialize(&app_context,"XBomb",
                             NULL, (Cardinal)0,argc,argv,NULL,
-                            XtNtitle,"XBomb V2.2a",
+                            XtNtitle,"XBomb V2.2b",
                             XtNiconName,"XBomb",
                             NULL);
 
@@ -243,7 +241,7 @@ void InitialiseX(int *argc,char **argv)
  XtVaGetSubresources(play_area,(XtPointer)&resources,"grid","XBomb",xresources,XtNumber(xresources),NULL);
 
  values.font=resources.fontstruct->fid;
- for(i=0;i<NUM_GC;i++)
+ for(i=0;i<NUM_GC-1;i++)
    {
     values.foreground=resources.colours[i];
     if(i==GC_UNSEEN)
@@ -284,7 +282,7 @@ void InitialiseX(int *argc,char **argv)
  /* The highscore table. */
 
  highscore=XtVaCreatePopupShell("hiscores",topLevelShellWidgetClass,toplevel,
-                                XtNtitle,"XBomb V2.2a High Scores",XtNiconName,"XBomb Hi-scores",
+                                XtNtitle,"XBomb V2.2b High Scores",XtNiconName,"XBomb Hi-scores",
                                 XtNmappedWhenManaged,False,
                                 NULL);
 
