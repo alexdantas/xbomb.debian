@@ -1,21 +1,9 @@
-Description: Applied hardening flags to build process.
+Description: Applied GCC hardening flags to build process.
 Author: Alexandre Dantas <eu@alexdantas.net>
-Last-Update: 2013-05-02
---- a/Makefile
-+++ b/Makefile
-@@ -13,7 +13,10 @@
- #
- 
- CC=gcc
--CFLAGS=-O2
-+CFLAGS   = -O2 $(CDEBUG) -Wall -Wextra $(shell dpkg-buildflags --get CFLAGS)
-+CPPFLAGS = $(shell dpkg-buildflags --get CPPFLAGS)
-+LDFLAGS  = $(shell dpkg-buildflags --get LDFLAGS)
-+
- 
- INCLUDES=
- 
-@@ -32,12 +35,12 @@
+Last-Update: 2014-08-18
+--- xbomb.orig/Makefile
++++ xbomb/Makefile
+@@ -32,12 +32,12 @@ INSTDIR=/usr/local
  ########
  
  xbomb : $(OBJ)
@@ -26,7 +14,7 @@ Last-Update: 2013-05-02
  
  %.o : %.c
 -	$(COMPILE) $< -o $@ $(INCLUDES)
-+	$(COMPILE) $(CPPFLAGS) $(CFLAGS) $< -o $@ $(INCLUDES)
++	$(COMPILE) $(CPPFLAGS) $(CFLAGS) $(CXXFLAGS) $< -o $@ $(INCLUDES)
  
  xbomb.o   : xbomb.c   xbomb.h
  xwindow.o : xwindow.c xbomb.h icon.h
