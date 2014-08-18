@@ -4,7 +4,7 @@ Upstream-Contact: Andrew M. Bishop <amb@gedanken.demon.co.uk>
 Source: http://www.gedanken.org.uk/software/xbomb/
 
 Files: *
-Copyright: 1994-2009 Andrew M. Bishop 
+Copyright: 1994-2014 Andrew M. Bishop 
 License: GPL-2.0+
 
 Files: debian/*
