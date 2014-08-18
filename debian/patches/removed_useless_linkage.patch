@@ -1,9 +1,9 @@
 Description: Removed unnecessary linkage with libXmu (-lXmu) - executable wasn't using any of the symbols.
 Author: Alexandre Dantas <eu@alexdantas.net>
-Last-Update: 2013-05-02
---- a/Makefile
-+++ b/Makefile
-@@ -22,7 +22,7 @@
+Last-Update: 2014-08-18
+--- xbomb.orig/Makefile
++++ xbomb/Makefile
+@@ -19,7 +19,7 @@ INCLUDES=
  
  LIB=
  
