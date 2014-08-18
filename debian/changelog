@@ -1,6 +1,14 @@
+xbomb (2.2b-1) unstable; urgency=medium
+
+  * New upstream version (Closes: #757902)
+  * debian/patches/*
+    - Updated patches to new upstream version
+
+ -- Alexandre Dantas <eu@alexdantas.net>  Sun, 17 Aug 2014 23:36:06 -0400
+
 xbomb (2.2a-3) unstable; urgency=low
 
-  * Bump standards version to 3.9.5 (no changes) 
+  * Bump standards version to 3.9.5 (no changes)
   * Fixed end-of-line errors on patch files
   * Added desktop file and PNG icons (closes: #738057)
   * Updated maintainer mail address
