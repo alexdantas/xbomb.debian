@@ -1,3 +1,47 @@
+2014-08-15  Andrew M. Bishop <amb>
+
+        Version 2.2b Released
+
+2014-08-15 [r76]  Andrew M. Bishop <amb>
+
+	* FILES, README, xbomb.c, xwindow.c: Updated for version 2.2b.
+
+2014-08-15 [r74]  Andrew M. Bishop <amb>
+
+	* xwindow.c: Fix off-by-one error in creation of graphic contexts
+	  leading to writing beyond end of array [fixes Debian bug
+	  #757902]..
+
+2013-03-16 [r73]  Andrew M. Bishop <amb>
+
+	* README, xbomb.c: Change web-page and e-mail addresses from
+	  gedanken.demon.co.uk to gedanken.org.uk.
+
+2013-03-16 [r73]  Andrew M. Bishop <amb>
+
+	* xbomb.c, README: Change web-page and e-mail addresses from
+	  gedanken.demon.co.uk to gedanken.org.uk.
+
+2011-10-03 [r72]  Andrew M. Bishop <amb>
+
+	* FILES (added), ANNOUNCE (removed), LSM (removed): Don't include
+	  the ANNOUNCE or LSM files in future releases. Do include the
+	  FILES file in subversion.
+
+2010-12-27 [r70]  Andrew M. Bishop <amb>
+
+	* ChangeLog (removed): Remove the ChangeLog from version control.
+
+2010-12-24 [r67]  Andrew M. Bishop <amb>
+
+	* ANNOUNCE (added), COPYING (added), ChangeLog (added), LSM
+	  (added): Added the uncontrolled files from the xbomb 2.2a
+	  release.
+
+2010-12-24  Andrew M. Bishop <amb@gedanken.demon.co.uk>
+
+	Changed version control environment from RCS to CVS to SVN.
+
 2009-11-29  Andrew M. Bishop  <amb@gedanken.demon.co.uk>
 
         Version 2.2a Released

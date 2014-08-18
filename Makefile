@@ -1,4 +1,4 @@
-# $Header: /home/amb/xbomb/RCS/Makefile 1.13 1996/01/20 21:02:46 amb Exp $
+# $Header: /home/amb/CVS/xbomb/Makefile,v 1.13 1996-01-20 21:02:46 amb Exp $
 #
 # XBomb - 'Minesweeper' game - Version 2
 #
