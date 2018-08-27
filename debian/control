@@ -8,6 +8,7 @@ Build-depends: debhelper (>= 9), libx11-dev, libxt-dev, x11proto-core-dev,
 Homepage: http://www.gedanken.org.uk/software/xbomb/
 Vcs-Git: git://github.com/alexdantas/xbomb.debian.git -b master
 Vcs-Browser: https://github.com/alexdantas/xbomb.debian
+Rules-Requires-Root: binary-targets
 
 Package: xbomb
 Architecture: any
