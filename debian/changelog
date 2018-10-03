@@ -1,6 +1,7 @@
 xbomb (2.2b-2) UNRELEASED; urgency=medium
 
   * Use secure URI in Vcs control header.
+  * Use secure copyright file specification URI.
 
  -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 03 Oct 2018 09:05:10 +0100
 
