@@ -6,7 +6,7 @@ Standards-Version: 3.9.5
 Build-depends: debhelper (>= 9), libx11-dev, libxt-dev, x11proto-core-dev,
                libxaw7-dev
 Homepage: http://www.gedanken.org.uk/software/xbomb/
-Vcs-Git: git://github.com/alexdantas/xbomb.debian.git -b master
+Vcs-Git: https://github.com/alexdantas/xbomb.debian.git -b master
 Vcs-Browser: https://github.com/alexdantas/xbomb.debian
 
 Package: xbomb
@@ -16,4 +16,4 @@ Description: 'minesweeper' game with squares, hexagons or triangles
  A test of speed and logic to find the location of bombs hidden in a grid.
  It offers the standard grid of squares, plus grids of hexagons or triangles,
  each in 3 difficulty levels. All games are played against the clock with a
- high-score table for each combination. 
+ high-score table for each combination.
