@@ -6,6 +6,7 @@ xbomb (2.2b-2) UNRELEASED; urgency=medium
   * Re-export upstream signing key without extra signatures.
   * Set upstream metadata fields: Repository.
   * Use secure URI in Vcs control header Vcs-Git.
+  * Fix field name case in debian/control (Build-depends => Build-Depends).
 
  -- Debian Janitor <janitor@jelmer.uk>  Sun, 13 Jun 2021 15:51:30 -0000
 

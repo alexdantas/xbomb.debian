@@ -3,11 +3,11 @@ Section: games
 Priority: optional
 Maintainer: Alexandre Dantas <eu@alexdantas.net>
 Standards-Version: 3.9.5
-Build-depends: debhelper (>= 9), libx11-dev, libxt-dev, x11proto-core-dev,
-               libxaw7-dev
 Homepage: https://www.gedanken.org.uk/software/xbomb/
 Vcs-Git: https://github.com/alexdantas/xbomb.debian.git -b master
 Vcs-Browser: https://github.com/alexdantas/xbomb.debian
+Build-Depends: debhelper (>= 9), libx11-dev, libxt-dev, x11proto-core-dev,
+               libxaw7-dev
 
 Package: xbomb
 Architecture: any
